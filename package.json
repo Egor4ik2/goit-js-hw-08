@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://egor4ik2.github.io/goit-js-hw-08/",
+  "homepage": "https://Egor4ik2.github.io/goit-js-hw-08/",
   "scripts": {
     "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
