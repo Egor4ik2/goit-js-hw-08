@@ -56,4 +56,4 @@ renderGalleryItems(galleryItems);
 
 
 
-const lightbox = new SimpleLightbox('.gallery a', { galleryItems });dasasd
+const lightbox = new SimpleLightbox('.gallery a', { galleryItems });
