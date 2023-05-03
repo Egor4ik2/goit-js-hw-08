@@ -29,6 +29,7 @@ const clearState = () => {
   localStorage.removeItem('feedback-form-state');
   emailInput.value = '';
   messageInput.value = '';
+ 
 };
 
 
@@ -39,12 +40,15 @@ form.addEventListener('input', throttledSaveState);
 
 loadState();
 
-
 form.addEventListener('submit', event => {
-  event.preventDefault(); 
-  console.log({ 
-    email: emailInput.value,
-    message: messageInput.value
-  });
+  event.preventDefault();
+  
+  if (emailInput.value && messageInput.value) {
+    console.log({
+      email: emailInput.value,
+      message: messageInput.value
+    });
+  }
+  
   clearState();
 });

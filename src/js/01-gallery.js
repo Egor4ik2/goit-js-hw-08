@@ -56,23 +56,4 @@ renderGalleryItems(galleryItems);
 
 
 
-
-
-
-gallery.addEventListener('click', (event) => {
-  event.preventDefault();
-
-  if (event.target.nodeName !== 'IMG') {
-    return;
-  }
-
-  const src = event.target.dataset.source;
-
-  const instance = basicLightbox.create(`
-    <div class="modal">
-      <img src="${src}" alt="" />
-    </div>
-  `);
-
-  instance.show();
-});
+const lightbox = new SimpleLightbox('.gallery a', { galleryItems });
